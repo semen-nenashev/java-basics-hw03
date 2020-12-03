@@ -46,9 +46,12 @@ There are number of different ways to run your unit tests, e.g.:
 
 Code is passing tests if they running one at time and not all.
 My mentor says it can be resolved by adding the code to StudentTest below 
+
 @BeforeMethod
     public void resetCounters() {
+    
         Student.studentCounter = 0;
         Student.ratingSum = 0.0;
     }
+    
 Leave it here coz by task I have no perrmission to rewrite StudentTask file.
