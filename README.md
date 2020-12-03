@@ -2,6 +2,8 @@
 
 This is a homework for the Java OOP Part I
 
+
+
 ## IntelliJ IDEA project configuration
 1. Clone this project to your local environment
 
@@ -41,3 +43,12 @@ There are number of different ways to run your unit tests, e.g.:
 * Right click on a little green triangle near the class definition and choose `Run 'StudentTest'`
 * In `StudentTest` class put your cursor on its definition and press `Ctrl+Shift+F10` (`Control+Shift+R`)
 * Once you executed your test you could re-run it again by pressing `Shift+F10` (`Control+R`)
+
+Code is passing tests if they running one at time and not all.
+My mentor says it can be resolved by adding the code to StudentTest below 
+@BeforeMethod
+    public void resetCounters() {
+        Student.studentCounter = 0;
+        Student.ratingSum = 0.0;
+    }
+Leave it here coz by task I have no perrmission to rewrite StudentTask file.
