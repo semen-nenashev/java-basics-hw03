@@ -54,6 +54,7 @@ public class Student {
     }
 
     public static void removeStudent(Student student) {
+        studentCounter--;
         student = null;
         System.gc();
     }
@@ -75,8 +76,9 @@ public class Student {
         System.out.println("rating before: " + Student.getAvgRating());
         s2.changeRating(17);
         System.out.println(s3.toString());
-        System.out.println(s1.toString()+"; "+s2.toString()+"; "+s3.toString()+";");
+        System.out.println(s1.toString() + "; " + s2.toString() + "; " + s3.toString() + ";");
         System.out.println("Rating after:  " + Student.getAvgRating());
+
 
     }
 }
